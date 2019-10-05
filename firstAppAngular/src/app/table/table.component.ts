@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'table-component',
-  templateUrl: 'table.component.html'
+  templateUrl: 'table.component.html',
+  styleUrls: ['table.component.css']
 })
 
 export class TableComponent {
-  title:string = 'This is Table component';
+  title: string = 'This is Table component';
+  inputText: string = "";
   products:any[] = [{"name":"Suzanna","age":1,"email":"sceyssen0@craigslist.org","phone":"330-589-0272"},
     {"name":"Danyelle","age":2,"email":"diddens1@prnewswire.com","phone":"161-888-8854"},
     {"name":"Consuela","age":3,"email":"chanford2@ustream.tv","phone":"187-214-3843"},
