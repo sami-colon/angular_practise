@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <div id="star-content1">
   <i class="fa fa-star" style="font-size: 30px; display: inline; color: yellow;" *ngFor="let x of currentStarsArray"></i>
-  <i class="fa fa-star gradientText" *ngIf="rating > currentStars"></i>
+  <i class="fa fa-star gradientText" *ngIf="rating > currentStars" [ngClass]="getClass()"></i>
   <i class="fa fa-star" style="font-size: 30px; display: inline; color: white;"  *ngIf="rating == currentStars"></i>
   <i class="fa fa-star" style="font-size: 30px; display: inline; color: white;" *ngFor="let x of remStarsArray"></i>
 </div>
