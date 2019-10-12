@@ -15,19 +15,29 @@
         <th>Age</th>
         <th>Email</th>
         <th>Phone No</th>
+        <th>Rating</th>
       </tr>
       </thead>
+<!--      <tbody>-->
+<!--        <tr class="text-center text-white bg-info" *ngFor="let product of products | searchPipe:inputText">-->
+<!--          <td>{{product.name}}</td>-->
+<!--          <td>{{product.age}}</td>-->
+<!--          <td>{{product.email}}</td>-->
+<!--          <td>{{product.phone}}</td>-->
+<!--          <td><div id="star-rating" [style.width.px]="product.star * 30"><app-star ["rating"] = "product.star"></app-star></div></td>-->
+<!--        </tr>-->
+<!--      </tbody>-->
       <tbody>
-        <tr class="text-center text-white bg-info" *ngFor="let product of products | searchPipe:inputText">
-          <td>{{product.name}}</td>
-          <td>{{product.age}}</td>
-          <td>{{product.email}}</td>
-          <td>{{product.phone}}</td>
-        </tr>
+      <tr class="text-center bg-info text-white" *ngFor="let product of products | searchPipe:inputText">
+        <td>{{product.name}}</td>
+        <td>{{product.age}}</td>
+        <td>{{product.email}}</td>
+        <td>{{product.phone}}</td>
+        <td><app-star [rating]="product.star"></app-star></td>
+      </tr>
       </tbody>
     </table>
   </div>
 </div>
-
 
 

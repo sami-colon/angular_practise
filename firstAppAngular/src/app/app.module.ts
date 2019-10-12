@@ -5,13 +5,15 @@ import { TableComponent } from './table/table.component';
 import {FormsModule} from '@angular/forms';
 import {SearchPipe} from './table/search.pipe';
 import {CounterPipe} from './table/counter.pipe';
+import { StarComponent } from './star/star.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     SearchPipe,
-    CounterPipe
+    CounterPipe,
+    StarComponent
   ],
   imports: [
     BrowserModule,

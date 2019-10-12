@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+i
+{
+  margin-right: 3px;
+}
+.gradientText
+{
+  font-size: 30px;
+  display: inline;
+  background-image: linear-gradient(to right, white 0%, yellow 0% 100%);
+  color: transparent;
+  background-clip: text;
+}
+star{}
