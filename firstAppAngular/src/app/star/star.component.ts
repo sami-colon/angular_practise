@@ -3,7 +3,6 @@ import {
   Input,
   OnChanges,
 } from '@angular/core';
-// import * as $ from 'jquery';
 
 @Component({
   selector: 'app-star',
@@ -26,10 +25,6 @@ export class StarComponent implements OnChanges{
     this.decimal =  Math.ceil((this.rating - this.currentStars) * 10);
     console.log(this.decimal);
   }
-  // ngAfterViewChecked(): void {
-  //   // console.log(this.decimal, this.rating);
-  //   $('.gradientText').last().css({'background-image':'linear-gradient(to right, yellow '+this.decimal+'%, white '+this.decimal+'% '+100+'%)'});
-  // }
   getClass() {
     return `gradient${this.decimal}`;
   }

@@ -6,6 +6,7 @@ import {FormsModule} from '@angular/forms';
 import {SearchPipe} from './table/search.pipe';
 import {CounterPipe} from './table/counter.pipe';
 import { StarComponent } from './star/star.component';
+import {ProductService} from './product.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { StarComponent } from './star/star.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
